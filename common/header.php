@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="<?php echo get_theme_option('Style Sheet'); ?>" lang="<?php echo get_html_lang(); ?>">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"  />
+    <?php if ($description = option('description')): ?>
+    <meta name="description" content="<?php echo $description; ?>" />
+    <?php endif; ?>
+
+    <?php
+    if (isset($title)) {
+        $titleParts[] = strip_formatting($title);
+    }
+    $titleParts[] = option('site_title');
+    ?>
+    <title><?php echo implode(' &middot; ', $titleParts); ?></title>
+
+    <?php echo auto_discovery_link_tags(); ?>
+
+    <!-- Le styles -->
+
+    <?php queue_css_file('bootstrap.min','all',false,'bootstrap-dist/3.2.0/css'); ?>
+    <?php queue_css_file(array('docs','style')); ?>
+    <style type="text/css">
+      body {
+        xpadding-top: 60px;
+        xpadding-bottom: 40px;
+      }
+      .sidebar-nav {
+        xpadding: 9px 0;
+      }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- Plugin Stuff -->
+    <?php fire_plugin_hook('public_head',array('view'=>$this)); ?>
+
+    <!-- Stylesheets -->
+    <?php echo head_css(); ?>
+
+    <!-- JavaScripts -->
+    <?php queue_js_file('vendor/modernizr'); ?>
+    <?php queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)')); ?>
+    <?php queue_js_file('vendor/respond'); ?>
+    <?php queue_js_file('globals'); ?>
+    <?php echo head_js(); ?>
+
+
+
+
+</head>
+
+<?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass, 'data-spy' => 'scroll', 'data-target' => '.subnav', 'data-offset' => '50')); ?>
+    <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
+
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="<?php echo img('logoalpha.png', 'assets/img');?>" class="img-responsive" style="height:130%;width:auto;background-color:transparent;">
+      </a>
+      <a class="navbar-brand" href="/">
+        the gail project
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+        <!-- the Active class denotes the "selected" page -->
+        <li class="active">
+          <?php echo bootstrap_nav_item('Home','/'); ?>
+        </li>
+        <li>
+          <?php echo bootstrap_nav_item('Collections','/collections'); ?>
+          <?php echo bootstrap_nav_item('Studio','/items'); ?>
+          <?php echo bootstrap_nav_item('Contribute','/contribute'); ?>
+          <!-- This next thing is supposed to get all the navs done at once according to admin setup. Best practice will be to use this.
+          Maybe grab the stuff from the navigation array and then feed it into bootstrap nav items? still need to figure out sub-items and drop downs. -->
+          <!--<?php echo public_nav_main(array('role' => 'navigation')); ?>-->
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <div id="language-chooser">
+            <a href="<?php 
+                     $server = $_SERVER['REQUEST_URI'];
+                     $lang=LocalePickerPlugin::GetLanguage();
+                     $otherlang = ($lang=='ja') ? 'en' : 'ja';
+                     //if there is a get tag to the current language
+                     if((strpos($server,"lang=".$lang))){
+                         echo str_replace("lang=$lang","lang=$otherlang",$server);
+                     }elseif(strpos($server,"lang=")){
+                         echo $server;
+                     }else{
+                         echo($server);
+                         echo (strpos($server, '?') ? '&lang=' : '?lang=');                      
+                         echo($otherlang);
+                     }
+                     ?>">
+              <?php 
+              echo(($lang == 'ja') ? 'Switch to English' : '日本語');
+              ?>
+            </a>
+          </div>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+<!-- end common/header.php -->
