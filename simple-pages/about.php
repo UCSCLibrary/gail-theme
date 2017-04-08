@@ -23,6 +23,7 @@
 <p> The Gail Project is directed by Professor Alan Christy of UC Santa Cruz, and  Shelby Graham of the Sesnon Gallery. </p></B>
 
 <!--test-->
+<!--test2-->
 
 <B><p>プロジェクトについて</p>
 
