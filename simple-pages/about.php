@@ -25,6 +25,99 @@
 <!--test-->
 <!--test2-->
 
+    <div class="row">
+      <h1>Connect With Us</h1>
+      <div class="container fluid">
+        <div class="col-xs-6 col-sm-6 col-md-3">
+          <div class="row">
+            <div class="thumbnail1 text-center">
+			  <img src="<?php echo img('TW.jpg', 'assets/img');?>" alt="" class="center-block">
+                <a
+			       href="https://twitter.com/thegailproject">
+			       <img src="<?php echo img('twitter.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
+                </a>
+			  <div class="caption1">
+                <font color="white">
+				 <p>On our reading list! http://blog.lareviewofbooks.org
+				   /chinablog/journalism-love-wartime-
+				   china-qa-eve-hundred-midnights-author-
+				   bill-lascher/ ... h/t @mauracunningham
+				 </p>
+				</font>
+              </div>
+			</div>
+          </div>
+        </div>
+       
+	   <div class="col-xs-6 col-sm-6 col-md-3">
+          <div class="row">
+            <div class="thumbnail1 text-center">
+			  <img src="<?php echo img('FB.jpg', 'assets/img');?>" alt="" class="center-block">
+               <a
+			       href="https://www.facebook.com/TheGailProject/">
+			       <img src="<?php echo img('facebook.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
+			   </a>
+			  <div class="caption1">
+               <font color="white">
+				<p>
+				   More achievements 
+				   from the Gail Project students, 
+				   this time highlighting Stella Fronius! 
+				   http://news.ucsc.edu/2016/...
+				   /humanities-national-contest.html
+				</p>
+			   </font>
+              </div>
+			</div>
+          </div>
+        </div>
+        
+		<div class="col-xs-6 col-sm-6 col-md-3">
+          <!-- http://instafeedjs.com/ is a good resource for most recent. -->
+          <div class="row">
+            <div class="thumbnail1 text-center">
+			  <img src="<?php echo img('Inst.jpg', 'assets/img');?>" alt="" class="center-block">
+			    <a
+			       href="https://www.instagram.com/thegailproject/">
+			       <img src="<?php echo img('insta.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
+                </a>
+			  <div class="caption1">
+                <font color="white">
+				 <p>
+				    The Gail Project An Okinawan-American Dialogue Follow us for updates on our historical research, podcasts, YouTube channel, interviews, travel, team photos, and more!
+				 </p>
+			   </font>
+              </div>
+             </a>
+			</div>
+          </div>
+        </div>
+        
+		<div class="col-xs-6 col-sm-6 col-md-3">
+          <!-- http://instafeedjs.com/ is a good resource for most recent. -->
+		  <div class="row">
+            <div class="thumbnail1 text-center">
+			     <img src="<?php echo img('Medium.jpg', 'assets/img');?>" alt="" class="center-block">
+              <a
+				 href="https://medium.com/@TheGailProject">
+				 <img src="<?php echo img('medium.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
+			  </a>
+			  <div class="caption1">
+               <font color="white">
+				<p>"By Command of Major General 
+					Eagles”: Archival Documents and Lived
+					Historical Experience
+				
+					   - By Alan Christy
+				</p>
+			   </font>
+              </div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <B><p>プロジェクトについて</p>
 
 
