@@ -20,7 +20,7 @@
 
 <p> The project emphasizes hands-on research and creation of content by undergraduate students and serves as an innovative platform for new educational methods that encourage the use of multimedia, social media, archival research and travel. </p>
 
-<p> The Gail Project is directed by Professor Alan Christy of UC Santa Cruz, and  Shelby Graham of the Sesnon Gallery. TESTING TESTING TESTING</p></B>
+<!--<p> The Gail Project is directed by Professor Alan Christy of UC Santa Cruz, and  Shelby Graham of the Sesnon Gallery. TESTING TESTING TESTING</p></B>
 
 <!--test-->
 <!--test2-->
