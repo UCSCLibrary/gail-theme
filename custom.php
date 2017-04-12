@@ -6,6 +6,18 @@
  * in Omeka and any plugins.
  */
 
+add_shortcode('include_page','IncludePage');
+
+function IncludePage($args,$view) {
+ob_start();
+try{
+    include(dirname(__FILE__).'/simple-pages/'.$args['slug'].'.php');
+} catch(Exception $e) {
+    return('Error retrieving page: '.$e->getMessage());
+} 
+return ob_get_clean();
+}
+
 function bootstrap_utf8_htmlspecialchars($value)
 {
     return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
