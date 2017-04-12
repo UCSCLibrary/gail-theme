@@ -366,7 +366,7 @@
   </div>
 </div>
 
-<?php echo foot(); ?>
+
 
 <script>//JS for recentItemCarousel
 (function(){
@@ -389,3 +389,5 @@
   });
 }());
 </script>
+
+<?php echo foot(); ?>
