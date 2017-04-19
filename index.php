@@ -361,7 +361,7 @@
 
   <div class="container fluid" style="text-align: center;margin-top:40px;">
     <h1>Find out how you can help</h1>
-    <a class="btn btn-warning btn-lg" href="/contribute.php">Contribute</a>
+    <a class="btn btn-warning btn-lg" href="/contribute">Contribute</a>
   </div>
 </div>
 
