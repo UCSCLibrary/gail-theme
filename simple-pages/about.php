@@ -1,6 +1,6 @@
 <style>
 #primary {
-    visibility: hidden;
+    display:none;
 }
 </style>
 </div>
