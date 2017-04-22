@@ -1,7 +1,20 @@
 <style>
 #primary {
-    visibility: hidden;
+    display:none;
 }
+
+/*css for connect with us*/
+.thumbnail1 {
+    position: relative;
+	margin: 0 -15px;
+}
+
+/*css for text alignment*/
+figcaption{
+	text-align: center;
+}
+
+
 </style>
 </div>
 <div class="container-fluid main-area">
@@ -11,22 +24,231 @@
   <img src="<?php echo img('about.jpg', 'assets/img');?>" class="img-responsive">
 </div>
 
+<div style="padding-bottom: 20px"><h3><center><strong> Welcome to the Gail Project! </strong></center></h3></div>
 
-<h3> Welcome to the Gail Project! </h3>
+<div class="center-block text-center" style="padding-left: 30%; padding-right: 30%; text-align: justify;">
 
-<p> The Gail Project is a collaborative, international public history project that explores the founding years of the American military occupation of Okinawa.  The project is inspired by a collection of photos taken in Okinawa in 1952 by an American Army Captain: Charles Eugene Gail.  The photos were generously donated to Special Collections at McHenry Library by Charles' daughter, Geri Gail, and have since been made available for student research. </p>
 
-<p> Our team of faculty, artists and undergraduate students at the University of California, Santa Cruz, are developing a traveling exhibition of Gail's photographs with an accompanying digital archive that is comprised of the photos, key texts and documents, oral histories from both American and Okinawan voices, as well as undergraduate student research and writing.  We believe that using the photographs as a lens through which to view this crucial time is relevant to populations throughout Okinawa, Japan, the United States and the entire Pacific region, and we aim to establish a dialogue by shedding light on both historical and contemporary issues. </p>
+<p><font size="3"> The Gail Project is a collaborative, international public history project that explores the founding years of the American military occupation of Okinawa.  The project is inspired by a collection of photos taken in Okinawa in 1952 by an American Army Captain: Charles Eugene Gail.  The photos were generously donated to Special Collections at McHenry Library by Charles' daughter, Geri Gail, and have since been made available for student research. </font></p>
 
-<p> The project emphasizes hands-on research and creation of content by undergraduate students and serves as an innovative platform for new educational methods that encourage the use of multimedia, social media, archival research and travel. </p>
+<p><font size="3"> Our team of faculty, artists and undergraduate students at the University of California, Santa Cruz, are developing a traveling exhibition of Gail's photographs with an accompanying digital archive that is comprised of the photos, key texts and documents, oral histories from both American and Okinawan voices, as well as undergraduate student research and writing.  We believe that using the photographs as a lens through which to view this crucial time is relevant to populations throughout Okinawa, Japan, the United States and the entire Pacific region, and we aim to establish a dialogue by shedding light on both historical and contemporary issues. </font></p>
 
-<p> The Gail Project is directed by Professor Alan Christy of UC Santa Cruz, and  Shelby Graham of the Sesnon Gallery.</p></B>
+<p><font size="3"> The project emphasizes hands-on research and creation of content by undergraduate students and serves as an innovative platform for new educational methods that encourage the use of multimedia, social media, archival research and travel. </font></p>
 
+<p><font size="3"> The Gail Project is directed by Professor Alan Christy of UC Santa Cruz, and  Shelby Graham of the Sesnon Gallery.</font></p></B>
+</div>
 <!--test-->
 <!--test2-->
-
-
-
+<h3><center><strong> About Us </strong></center></h3>
+<div class="row">
+      <div class="container fluid">
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	      <div class="row">
+		    <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		    </div>
+			   <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		  </div>
+	    </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		     </div>
+	      </div>
+		 
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		      </div >
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+			 </div>
+	      </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			      <figcaption><strong>Name<strong><br> job </figcaption>
+		      </div>
+			 </div>
+	    </div>
+		<!-- end of container -->
+		</div>
+	  <!-- end of big row div-->
+	  </div>
+	  
+	 <div class="row">
+      <div class="container fluid">
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	      <div class="row">
+		    <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		    </div>
+			   <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		  </div>
+	    </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		     </div>
+	      </div>
+		 
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div >
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+			 </div>
+	      </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			      <figcaption><strong>Name<strong><br> job </figcaption>
+		      </div>
+			 </div>
+	    </div>
+		<!-- end of container -->
+		</div>
+	  <!-- end of big row div-->
+	  </div>
+	  
+	  </div>
+	  
+	  <div class="row">
+      <div class="container fluid">
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	      <div class="row">
+		    <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		    </div>
+			   <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		  </div>
+	    </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		     </div>
+	      </div>
+		 
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div >
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+			 </div>
+	      </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			      <figcaption><strong>Name<strong><br> job </figcaption>
+		      </div>
+			 </div>
+	    </div>
+		<!-- end of container -->
+		</div>
+	  <!-- end of big row div-->
+	  </div>
+	  
+	  </div>
+	  
+<h3><center><strong> Gail Hall of Fame (or donators) </strong></center></h3>
+	  </div>
+	  
+	  <div class="row">
+      <div class="container fluid">
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	      <div class="row">
+		    <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		    </div>
+			   <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		  </div>
+	    </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		     </div>
+	      </div>
+		 
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div >
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+			 </div>
+	      </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			      <figcaption><strong>Name<strong><br> job </figcaption>
+		      </div>
+			 </div>
+	    </div>
+		<!-- end of container -->
+		</div>
+	  <!-- end of big row div-->
+	  </div>
+	  
+	  </div>
+<!--
 <B><p>プロジェクトについて</p>
 
 
