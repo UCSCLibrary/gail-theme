@@ -83,12 +83,12 @@
     @media all and (min-width: 768px) {
       @media (transform-3d), (-webkit-transform-3d) {
         > .item.active.right, > .item.next {
-          transform: translate3d(33.333%, 0, 0);
+          transform: translate3d(50%, 0, 0);
           left: 0;
         }
         > .item.active.left,
         > .item.prev {
-          transform: translate3d(-33.333%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
           left: 0;
         }
         > .item.left,
@@ -100,11 +100,11 @@
       }
       > .active.left,
       > .prev {
-        left: -33.333%;
+        left: -50%;
       }
       > .active.right,
       > .next {
-        left: 33.333%;
+        left: 50%;
       }
       > .left,
       > .prev.right,
@@ -121,12 +121,12 @@
       (-webkit-transform-3d) {
         > .item.active.right,
         > .item.next {
-          transform: translate3d(16.666%, 0, 0);
+          transform: translate3d(25%, 0, 0);
           left: 0;
         }
         > .item.active.left,
         > .item.prev {
-          transform: translate3d(-16.666%, 0, 0);
+          transform: translate3d(-25%, 0, 0);
           left: 0;
         }
         > .item.left,
@@ -138,11 +138,11 @@
       }
       > .active.left,
       > .prev {
-        left: -16.666%;
+        left: -25%;
       }
       > .active.right,
       > .next {
-        left: 16.666%;
+        left: 25%;
       }
       > .left,
       > .prev.right,
@@ -157,7 +157,6 @@
     }
   }
 }
-
 </style>
 
 <div class="container-fluid" style="width:100%;padding-left:0px;padding-right:0px;">
@@ -362,11 +361,11 @@
 
   <div class="container fluid" style="text-align: center;margin-top:40px;">
     <h1>Find out how you can help</h1>
-    <a class="btn btn-warning btn-lg" href="/contribute.php">Contribute</a>
+    <a class="btn btn-warning btn-lg" href="/contribute">Contribute</a>
   </div>
 </div>
 
-<?php echo foot(); ?>
+
 
 <script>//JS for recentItemCarousel
 (function(){
@@ -389,3 +388,5 @@
   });
 }());
 </script>
+
+<?php echo foot(); ?>

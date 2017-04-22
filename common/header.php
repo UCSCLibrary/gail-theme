@@ -29,6 +29,7 @@
       .sidebar-nav {
         xpadding: 9px 0;
       }
+
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -52,25 +53,23 @@
     <?php queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)')); ?>
     <?php queue_js_file('vendor/respond'); ?>
     <?php queue_js_file('globals'); ?>
+    <?php queue_js_file('jquery'); ?>
     <?php echo head_js(); ?>
-
-
-
 
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass, 'data-spy' => 'scroll', 'data-target' => '.subnav', 'data-offset' => '50')); ?>
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
-
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top" style="position:relative;margin-bottom:0px;border-bottom-width:0px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+
       <a class="navbar-brand" href="/">
         <img src="<?php echo img('logoalpha.png', 'assets/img');?>" class="img-responsive" style="height:130%;width:auto;background-color:transparent;">
       </a>
@@ -78,22 +77,24 @@
         the gail project
       </a>
     </div>
-    <div class="navbar-collapse collapse">
+    <div class="collapse navbar-collapse" id="nav-navbar-collapse">
       <ul class="nav navbar-nav">
-        
-        <!-- the Active class denotes the "selected" page -->
+         <!--the Active class denotes the "selected" page -->
         <li class="active">
           <?php echo bootstrap_nav_item('Home','/'); ?>
         </li>
-        <li>
+        <!--<li>
           <?php echo bootstrap_nav_item('Collections','/collections'); ?>
           <?php echo bootstrap_nav_item('Studio','/items'); ?>
           <?php echo bootstrap_nav_item('Contribute','/contribute'); ?>
-          <!-- This next thing is supposed to get all the navs done at once according to admin setup. Best practice will be to use this.
-          Maybe grab the stuff from the navigation array and then feed it into bootstrap nav items? still need to figure out sub-items and drop downs. -->
-          <!--<?php echo public_nav_main(array('role' => 'navigation')); ?>-->
-        </li>
+        </li>-->
       </ul>
+
+
+      <!--<?php echo public_nav_main()->setUlClass('nav navbar-nav'); ?>-->
+      <?php echo preg_replace( "/(?<!\/)<ul(?!.*?nav)/", '<ul class="dropdown-menu"', public_nav_main() );?>
+
+
       <ul class="nav navbar-nav navbar-right">
         <div id="language-chooser">
             <a href="<?php 
@@ -120,6 +121,5 @@
     </div><!--/.nav-collapse -->
   </div>
 </div>
-
 
 <!-- end common/header.php -->
