@@ -21,16 +21,8 @@
 
     <?php queue_css_file('bootstrap.min','all',false,'bootstrap-dist/3.2.0/css'); ?>
     <?php queue_css_file(array('docs','style')); ?>
-    <style type="text/css">
-      body {
-        xpadding-top: 60px;
-        xpadding-bottom: 40px;
-      }
-      .sidebar-nav {
-        xpadding: 9px 0;
-      }
 
-    </style>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,6 +49,17 @@
     <?php echo head_js(); ?>
 
 </head>
+
+<style>
+  body {
+        xpadding-top: 60px;
+        xpadding-bottom: 40px;
+        padding-top:0px;
+      }
+      .sidebar-nav {
+        xpadding: 9px 0;
+      }
+</style>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass, 'data-spy' => 'scroll', 'data-target' => '.subnav', 'data-offset' => '50')); ?>
     <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
