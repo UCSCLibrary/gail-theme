@@ -86,14 +86,9 @@
         <li class="active">
           <?php echo bootstrap_nav_item('Home','/'); ?>
         </li>
-        <!--<li>
-          <?php echo bootstrap_nav_item('Collections','/collections'); ?>
-          <?php echo bootstrap_nav_item('Studio','/items'); ?>
-          <?php echo bootstrap_nav_item('Contribute','/contribute'); ?>
-        </li>-->
       </ul>
 
-
+      <!--THIS MUST REMAIN COMMENTED OUT, NOT DELETED, NOT ACTIVE, FOR SOME REASON IT MUST REMAIN COMMENTED OUT-->
       <!--<?php echo public_nav_main()->setUlClass('nav navbar-nav'); ?>-->
       <?php echo preg_replace( "/(?<!\/)<ul(?!.*?nav)/", '<ul class="dropdown-menu"', public_nav_main() );?>
 
