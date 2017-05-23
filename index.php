@@ -6,16 +6,6 @@
   width:50px;
   margin-left:-50px;
 }
-/*#recentCarousel {margin-left: 30px; margin-right: 30px;}
-
-.carousel-control.left, .carousel-control.right {
-  background: none;
-  color: @red;
-  border: none;
-}
-.carousel-control.left {margin-left: -100px; color: black;}
-.carousel-control.right {margin-right: -100px; color: black;}*/
-
 
 .intro-header{
   padding-top:50px;
