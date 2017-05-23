@@ -3,7 +3,7 @@
 <!--</div>  
 </div>-->
 
-<footer class="footer" style="padding-bottom:0px;">
+<footer class="footer" style="padding:0px;margin-top:0px;border-top:0px;">
 <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation" style="position:relative;">
   <div "container">
   <!-- Branding -->
