@@ -2,46 +2,48 @@
 #primary {
     display:none;
 }
+.navbar {
+  margin-bottom: 0;
+}
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+
+  text-align: center;
+}
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+.jumbotron-heading {
+  font-weight: 300;
+}
 </style>
 </div>
-<div class="container-fluid main-area">
+<div class="container-fluid main-area" style="padding-bottom:10rem;">
     <div class="row-fluid">
         <div class="container fluid">
-            <center>
-                <h1> Contribute </h1>
+            <div class="jumbotron">
+              <div class="container">
+                <h1 class="display-3">Contribute to the Gail Project</h1>
+                <p>The Gail Project is a not-for-profit, student-managed buzzword that needs your contributions! Give us money!</p>
+                <p><a class="btn btn-primary btn-lg" href="https://securelb.imodules.com/s/1069/index.aspx?sid=1069&gid=1&pgid=780&dids=644&" role="button">Contribute »</a></p>
+              </div>
+            </div>
+            
+            <hr/>
+            <h2>Watch our Giving day videos throughout the years, created by the students of the Gail Project!</h2>
+
+            <h3>Giving Day 2017</h3>
+            <div class="container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/55gPuOIM4Jg?ecver=1" frameborder="0" allowfullscreen></iframe>
-            </center>
+            </div>
 
-            <h2>
-                Giving Day is over, but you can still help out!
-            </h2>
-            <p>
-                You can help support the Gail Project in many ways, by contributing images, stories or financial support. 
-                Learn more about the supporting the Gail Project.
-            </p>
-            <p>
-                Please contact us if you are interested in the project and would like to share your story from Okinawa.
-            </p>
-
-            <p>
-                email:
-                <a href="mailto:thegailproject@gmail.com" target="_top">thegailproject@gmail.com</a>
-            </p>
+            <h3>Giving Day 2016</h3>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WejH6naaNBc?ecver=1" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
-
-    <hr/>
-
-    <div class="row-fluid">
-        <div class="container fluid">
-            <p>
-            連絡先 沖縄のお話を聞かせて下さる方、ゲイル•プロジェクトに興味がおありの方はぜひご連絡下さい。 
-            </p>
-            <p>
-                電子メール:
-                <a href="mailto:thegailproject@gmail.com" target="_top">thegailproject@gmail.com</a>
-            </p>
-        </div>
-    </div>
-
 </div>
