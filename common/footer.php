@@ -14,6 +14,7 @@
               </a>
             </p>
             <br/><br/><br/>
+            <p style="color:white;">
               An Okinawan-American Dialogue
             </p>
           </div>
@@ -32,6 +33,7 @@
             </p>
           </div>
           <div class="col-md-3">
+            <p style="color:white;">
               Connect With Us
             </p>
             <div class="row">
