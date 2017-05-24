@@ -2,10 +2,10 @@
 
 <!-- item/browse.php -->
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style="padding-bottom:3rem;">
         <div class="page-header">
             <div class="col-md-5">
-                <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
+                <h1>Browse Files <?php echo __('(%s total)', $total_results); ?></h1>
 
                 <ul class="items-nav navigation" id="secondary-nav">
                     <?php echo public_nav_items(); ?>
@@ -62,7 +62,8 @@
                     </div><!-- end class="item-meta" -->
                 </div>
             </div>
-        </div><!-- end class="item entry" -->
+        </div><!-- end class="item hentry" -->
+        <hr/>
     <?php endforeach; ?>
 </div>
 
