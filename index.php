@@ -48,105 +48,6 @@
 .green{
 	background:#00f;
 }
-
-
-/* CSS for new carousel */
-.carousel-showsixmoveone {
-  .carousel-control {
-    width: 4%;
-    background-image: none;
-    &.left {
-      margin-left: 15px;
-    }
-    &.right {
-      margin-right: 15px;
-    }
-  }
-  .cloneditem-1,
-  .cloneditem-2,
-  .cloneditem-3,
-  .cloneditem-4,
-  .cloneditem-5 {
-    display: none;
-  }
-  .carousel-inner {
-    @media all and (min-width: 768px) {
-      @media (transform-3d), (-webkit-transform-3d) {
-        > .item.active.right, > .item.next {
-          transform: translate3d(50%, 0, 0);
-          left: 0;
-        }
-        > .item.active.left,
-        > .item.prev {
-          transform: translate3d(-50%, 0, 0);
-          left: 0;
-        }
-        > .item.left,
-        > .item.prev.right,
-        > .item.active {
-          transform: translate3d(0, 0, 0);
-          left: 0;
-        }
-      }
-      > .active.left,
-      > .prev {
-        left: -50%;
-      }
-      > .active.right,
-      > .next {
-        left: 50%;
-      }
-      > .left,
-      > .prev.right,
-      > .active {
-        left: 0;
-      }
-      .cloneditem-1,
-      .cloneditem-2 {
-        display: block;
-      }
-    }
-    @media all and (min-width: 992px) {
-      @media (transform-3d),
-      (-webkit-transform-3d) {
-        > .item.active.right,
-        > .item.next {
-          transform: translate3d(25%, 0, 0);
-          left: 0;
-        }
-        > .item.active.left,
-        > .item.prev {
-          transform: translate3d(-25%, 0, 0);
-          left: 0;
-        }
-        > .item.left,
-        > .item.prev.right,
-        > .item.active {
-          transform: translate3d(0, 0, 0);
-          left: 0;
-        }
-      }
-      > .active.left,
-      > .prev {
-        left: -25%;
-      }
-      > .active.right,
-      > .next {
-        left: 25%;
-      }
-      > .left,
-      > .prev.right,
-      > .active {
-        left: 0;
-      }
-      .cloneditem-3,
-      .cloneditem-4,
-      .cloneditem-5 {
-        display: block;
-      }
-    }
-  }
-}
 </style>
 
 <div class="container-fluid" style="width:100%;padding-left:0px;padding-right:0px;">
@@ -164,13 +65,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="carousel carousel-showsixmoveone slide" id="recentItemsCarousel">
+            <div class="carousel carousel-showmanymoveone slide" id="recentItemsCarousel">
               <div class="carousel-inner">
                 <?php
                 $items = get_recent_items(8);
                 set_loop_records('items',$items);
-                ?>
-                <?php
                 foreach (loop('items') as $item):
                   if (array_search($item,$items) == 0){
                     echo "<div class='item active'>";
@@ -344,29 +243,5 @@
     <a class="btn btn-warning btn-lg" href="https://securelb.imodules.com/s/1069/index.aspx?sid=1069&gid=1&pgid=780&dids=644&">Contribute</a>
   </div>
 </div>
-
-
-
-<script>//JS for recentItemCarousel
-(function(){
-  $('.carousel-showsixmoveone .item').each(function(){
-    var itemToClone = $(this);
-
-    for (var i=1;i<4;i++) {
-      itemToClone = itemToClone.next();
-
-      // wrap around if at end of item collection
-      if (!itemToClone.length) {
-        itemToClone = $(this).siblings(':first');
-      }
-
-      // grab item, clone, add marker class, add to collection
-      itemToClone.children(':first-child').clone()
-        .addClass("cloneditem-"+(i))
-        .appendTo($(this));
-    }
-  });
-}());
-</script>
 
 <?php echo foot(); ?>
