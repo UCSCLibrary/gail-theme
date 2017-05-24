@@ -6,7 +6,7 @@
 <!-- Menu goes here -->
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="padding-bottom:5rem;">
   <div class="row-fluid">
     <div class="col-md-10">
       <div class="row">
@@ -22,13 +22,7 @@
 
       <?php echo bootstrap_custom_show_item_metadata(); ?>
 
-      <!-- The following returns all of the files associated with an item. -->
-      <!--
-      <div id="itemfiles" class="element">
-      <h3><?php echo __('Files'); ?></h3> 
-      <div class="element-text"><?php echo files_for_item($options = array('imageSize' => 'fullsize','showFilename' => true)); ?></div>
-      </div>
-      -->
+      
 
 
       <?php
@@ -41,17 +35,21 @@
       <?php
       set_loop_records('files', get_current_record('item')->Files);
       foreach(loop('files') as $file): ?>
-        <div class="row">
-          <div class="col-md-10"> <!-- Display the file itself -->
-            <?php echo file_markup($file, $options = array('imageSize' => 'fullsize', 'showFilename' => false)); ?>
+        <div class="row" style="padding-bottom:1rem;">
+
+          <div class="col-md-8">
+            <a href=<?php echo metadata($file, 'uri')?>>
+              <?php echo file_image('fullsize', $props=array('class'=>'img-responsive'), $file);?>
+            </a>
           </div>
-          <div class="col-md-2">
+
+          <div class="col-md-4">
             <?php $name = pathinfo($file->original_filename, PATHINFO_FILENAME); ?>
             <?php echo $name .  "<br />"; ?>
             <?php echo metadata($file, array('Dublin Core', 'Title')); ?>
             <?php echo metadata($file, array('Dublin Core', 'Description')); ?>
           </div>
-        </div>
+        </div> 
       <?php endforeach; ?>
 
       <!-- Step 3 -->
@@ -82,7 +80,18 @@
           <?php echo metadata('item','citation',array('no_escape'=>true)); ?>
         </div>
       </div>
+
       <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+
+
+      <!-- The following returns all of the files associated with an item. -->
+      <!-- replace this with a carousel of related items-->
+      <div id="itemfiles" class="element">
+        <h3>Related Files</h3> 
+        <div class="element-text">
+          <?php echo files_for_item($options = array('imageSize' => 'thumbnail','showFilename' => false)); ?>
+        </div>
+      </div>
 
     </div>
   </div>
