@@ -78,14 +78,15 @@
 
 
 
-<!-- Le javascript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- JavaScripts -->
 <!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <?php queue_js_file(array(
   'bootstrap.min',
   'showmanymoveonecarousel')); ?>
-<!-- JavaScripts -->
+
 <script type="text/javascript">
   jQuery(document).ready(function(){
     Omeka.showAdvancedForm();
