@@ -7,18 +7,6 @@
   margin-left:-50px;
 }
 
-.intro-header{
-  padding-top:50px;
-  padding-bottom:500;
-  text-align:center;
-  background:url(/themes/Bootstrapv1/assets/img/bannertext.jpg) no-repeat center center;
-  background-size:cover;
-}
-.jumbotron{
-  background:url(/themes/Bootstrapv1/assets/img/bannertext.jpg) no-repeat center center;
-  background-size:100% 100%;
-}
-
 /*css for connect with us*/
 .thumbnail1 {
     position: relative;
