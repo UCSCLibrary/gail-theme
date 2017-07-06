@@ -1,40 +1,19 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 <style>
-/*Carousel buttons should be transparent. 
-.carousel-control.left,.carousel-control.right {
-  background-image:none;
-  width:50px;
-  margin-left:-50px;
-}*/
-
-/*css for connect with us*/
-.thumbnail1 {
-    position: relative;
-	margin: 0 -15px;
+.boxCaption{
+  position:absolute;
+  top: 45%;
+  left:50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.caption1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
+.card{
+  position:relative;
 }
 
-/*CSS for the box colors*/
-.center-box{
-	width:220px;
-	height:200px;
-}
-
-.twt{
-	background:#f00;
-}
-.fb{
-	background:#3b5998;
-}
-.green{
-	background:#00f;
+.album{
+  background-color: transparent;
 }
 </style>
 
@@ -79,140 +58,86 @@
       </div>
     </div>
 
-    <div class="row">
-      <h1>Project Highlights</h1>
-      <div class="container fluid">
+    
+    <div class="album text-muted">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <h1>Connect With Us</h1>
+          <!-- One Container of 3, one of 2-->
+          <div class="container-fluid">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="background-color: #a7d2e5;">
+                <a href="https://twitter.com/thegailproject">
+                  <img src="<?php echo img('twitter.png', 'assets/img');?>" alt="" class="img-responsive" style="opacity:0.5"/>
+                  <div class="boxCaption">
+                    <font color="white" style="text-shadow: 2px 2px #a7d2e5;">
+                      <p style="font-weight: bold;">
+                        We post to twitter about once a day, with facts about okinawa and quotes from luminaries in the project.
+                      </p>
+                    </font>
+                  </div>
+                </a>
+                <p class="card-text">Twitter</p>
+              </div>
+            </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="<?php echo img('Team.jpg', 'assets/img/frontpage');?>" class="img-responsive" style="max-height:215px;">
-            <div class="caption" style="min-height:150px;">
-              <h4>Introduction to the Gail Project</h4>
-              <p>Learn more about the Gail Project and find out how you can help.</p>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="background-color: #77a9ff;">
+                <a href="https://www.facebook.com/TheGailProject/">
+                  <img src="<?php echo img('facebook.png', 'assets/img');?>" class="img-responsive" style="opacity:0.5"/>
+                  <div class="boxCaption">
+                    <font color="white" style="text-shadow: 2px 2px #77a9ff;">
+                      <p style="font-weight: bold;">
+                        Our Facebook houses our larger posts, including events and important announcements.
+                      </p>
+                    </font>
+                  </div>
+                </a>
+                <p class="card-text">Facebook</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="<?php echo img('StellaSign.jpg', 'assets/img/frontpage');?>" class="img-responsive" style="max-height:215px;">
-            <div class="caption" style="min-height:150px;" >
-              <h4>Do You have a Passport?</h4>
-              <p>An essay and memoir about the project, written by one of our own alum, Stella Fronius</p>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="background-color: #f9a4a4;">
+                <a href="https://www.instagram.com/thegailproject/">
+                  <img src="<?php echo img('insta.png', 'assets/img');?>" class="img-responsive" style="opacity:0.5"/>
+                  <div class="boxCaption">
+                    <font color="white"  style="text-shadow: 2px 2px #f9a4a4;">
+                      <p style="font-weight: bold;">
+                        Instagram is where we post pictures related to the project, including photos taken during travel to Okinawa and group photos.
+                      </p>
+                    </font>
+                  </div>
+                </a>
+                <p class="card-text">Instagram</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="<?php echo img('Meeting.jpg', 'assets/img/frontpage');?>" class="img-responsive" style="max-height:215px;">
-            <div class="caption" style="min-height:150px;">
-              <h4>News & Events</h4>
-              <p>Stay informed of our news and events relevant to the project.</p>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="background-color: #939bc1;">
+                <a href="http://thegailproject.tumblr.com/">
+                  <img src="<?php echo img('insta.png', 'assets/img');?>" class="img-responsive" style="opacity:0.5"/>
+                  <div class="boxCaption">
+                    <font color="white" style="text-shadow: 2px 2px #939bc1;">
+                      <p style="font-weight: bold;">
+                        Our Tumblr is for our longer-form, blog-style posts, and travel logs.
+                      </p>
+                    </font>
+                  </div>
+                </a>
+                <p class="card-text">Tumblr</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <img src="<?php echo img('AlanRobert.jpg', 'assets/img/frontpage');?>" class="img-responsive" style="max-height:215px;">
-            <div class="caption" style="min-height:150px;">
-              <h4>Share Your History</h4>
-              <p>Your stories help us build context and develop meaningful narratives,
-                and are what allows us to draw conclusions and form expectations. Help us preserve your history.</p>
-            </div>
+
           </div>
         </div>
       </div>
+
+
+
     </div>
 
 
-
-
-    <div class="row">
-      <h1>Connect With Us</h1>
-      <div class="container fluid">
-        <div class="col-xs-6 col-sm-6 col-md-3">
-          <div class="row">
-            <div class="thumbnail1 text-center">
-		          <img src="<?php echo img('TW.jpg', 'assets/img');?>" alt="" class="center-block">
-              <a href="https://twitter.com/thegailproject">
-                <img src="<?php echo img('twitter.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
-              </a>
-			        <div class="caption1">
-                <font color="white">
-        				  <p>On our reading list! http://blog.lareviewofbooks.org
-        				   /chinablog/journalism-love-wartime-
-        				   china-qa-eve-hundred-midnights-author-
-        				   bill-lascher/ ... h/t @mauracunningham
-        				  </p>
-				        </font>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-        <div class="col-xs-6 col-sm-6 col-md-3">
-          <div class="row">
-            <div class="thumbnail1 text-center">
-              <img src="<?php echo img('FB.jpg', 'assets/img');?>" alt="" class="center-block">
-              <a href="https://www.facebook.com/TheGailProject/">
-                <img src="<?php echo img('facebook.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
-              </a>
-              <div class="caption1">
-                <font color="white">
-                  <p>
-                  More achievements 
-                  from the Gail Project students, 
-                  this time highlighting Stella Fronius! 
-                  http://news.ucsc.edu/2016/...
-                  /humanities-national-contest.html
-                  </p>
-                </font>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-xs-6 col-sm-6 col-md-3">
-          <!-- http://instafeedjs.com/ is a good resource for most recent. -->
-          <div class="row">
-            <div class="thumbnail1 text-center">
-              <img src="<?php echo img('Inst.jpg', 'assets/img');?>" alt="" class="center-block">
-              <a href="https://www.instagram.com/thegailproject/">
-                <img src="<?php echo img('insta.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
-              </a>
-              <div class="caption1">
-                <font color="white">
-                  <p>
-                  The Gail Project An Okinawan-American Dialogue Follow us for updates on our historical research, podcasts, YouTube channel, interviews, travel, team photos, and more!
-                  </p>
-                </font>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-xs-6 col-sm-6 col-md-3">
-          <!-- http://instafeedjs.com/ is a good resource for most recent. -->
-          <div class="row">
-            <div class="thumbnail1 text-center">
-              <img src="<?php echo img('Medium.jpg', 'assets/img');?>" alt="" class="center-block">
-              <a href="https://medium.com/@TheGailProject">
-                <img src="<?php echo img('medium.png', 'assets/img');?>" alt="" class="img-responsive" style="position:absolute;bottom:160px;right:220px;margin:0;padding:5px 3px;height:15%;width:10%;">
-              </a>
-              <div class="caption1">
-                <font color="white">
-                  <p>"By Command of Major General 
-                  Eagles”: Archival Documents and Lived
-                  Historical Experience
-
-                  - By Alan Christy
-                  </p>
-                </font>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
