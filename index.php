@@ -7,6 +7,10 @@
   margin-left:-50px;
 }
 
+.carouselItemPadding{
+  padding-left:100px;
+}
+
 /*css for connect with us*/
 .thumbnail1 {
     position: relative;
@@ -64,7 +68,7 @@
                   echo "<div class='item'>";
                 }
               ?>
-              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="col-xs-12 col-sm-6 col-md-3 carouselItemPadding">
                 <?php
                 echo "<a href=". metadata($item, 'permalink') .">";
                 ?>
