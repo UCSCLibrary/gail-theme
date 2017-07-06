@@ -1,7 +1,4 @@
 <style>
-#primary {
-    display:none;
-}
 .rowmod{
     margin-bottom:15px;
 }

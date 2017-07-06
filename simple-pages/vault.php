@@ -1,20 +1,3 @@
-<style>
-#primary {
-    display:none;
-}
-
-.navbar {
-  margin-bottom: 0;
-}
-.jumbotron {
-  margin-bottom: 0px;
-  height: 350px;
-  color: white;
-  text-shadow: black 0.3em 0.3em 0.3em;
-  background-size:cover;
-  background:url('/themes/Bootstrapv1/assets/img/vault3.jpg') no-repeat center center;
-}
-</style>
 </div>
 
 <div class="container-fluid main-area" style="padding-bottom:50px;">
