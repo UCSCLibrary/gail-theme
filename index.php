@@ -44,7 +44,7 @@
     <!--Based this carousel off of: http://codepen.io/rtpHarry/pen/ogVord-->
     <div class="container" style="padding-top:50px;">
       <div class="row">
-        <h1>Recent Digitized Items</h1>
+        <h1>Recently Digitized Items</h1>
         <div class="col-md-12">
           <div class="carousel carousel-showmanymoveone slide" id="recentItemsCarousel">
             <div class="carousel-inner">
