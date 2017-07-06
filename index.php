@@ -12,8 +12,24 @@
   position:relative;
 }
 
+.mediumcard{
+  min-height:20rem;
+  width: 100%;
+  text-align:center;
+  left: 50%;
+  float: left;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  background-color:#94efba;
+}
+
 .album{
+  min-height:25rem;
   background-color: transparent;
+}
+
+.mediumlogo{
+  opacity:0.75; max-height:10rem; max-width: 10rem; position: absolute
 }
 </style>
 
@@ -58,11 +74,32 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <h1>Featured Article</h1>
+        <div class="col-md-12">
+          <div class="mediumcard">
+            <div class="mediumlogo">
+              <a href="https://medium.com/@TheGailProject">
+                <img src="<?php echo img('medium.png', 'assets/img');?>" alt="" class="img-responsive" style="padding:1rem;"/>
+              </a>
+            </div>    
+
+            <h3 style="padding-left:10rem;padding-right: 10rem;">"By Command of Major General Eagles”: Archival Documents and Lived Historical Experience</h3>
+            <h4>Alan Christy</h4><br/>
+            <p style="padding-left:5rem;padding-right:5rem;">Imagine yourself going into an archive, passing through the bureaucratic entry procedures under the watchful eyes of an archivist. There is the moment when the materials you requested arrive. If the archive is good and organized, you open a cardboard box to find a sheaf of folders each holding an assortment of papers. If your heart is pounding in excitement, you are probably a historian, if not by profession then by temperament. You are filled with anticipation because, as Gail Project member Jessie Haupt says, you are about to “touch history...”</p>
+            <a href="https://medium.com/the-gail-project/by-command-of-major-general-eagles-archival-documents-and-lived-historical-experience-ef27099dfcb1"
+              <h4>Read More</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    <div class="album text-muted">
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <h1>Connect With Us</h1>
+    <div class="container">
+      <div class="row">
+        <h1>Connect With Us</h1>
+        <div class="album text-muted">
           <!-- One Container of 3, one of 2-->
           <div class="container-fluid">
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -132,11 +169,7 @@
           </div>
         </div>
       </div>
-
-
-
     </div>
-
 
   </div>
 </div>
