@@ -1,15 +1,11 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 <style>
-/*Carousel buttons should be transparent. */
+/*Carousel buttons should be transparent. 
 .carousel-control.left,.carousel-control.right {
   background-image:none;
   width:50px;
   margin-left:-50px;
-}
-
-.carouselItemPadding{
-  padding-left:100px;
-}
+}*/
 
 /*css for connect with us*/
 .thumbnail1 {
@@ -50,11 +46,10 @@
   <div class="row">
     <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
 
-    <!-- New carousel has minor issues:
-        left and right move a bunch over but are only supposed to move one at a time.
-        Based this carousel off of: http://codepen.io/rtpHarry/pen/ogVord-->
+    <!--Based this carousel off of: http://codepen.io/rtpHarry/pen/ogVord-->
     <div class="container" style="padding-top:50px;">
       <div class="row">
+        <h1>Recent Digitized Items</h1>
         <div class="col-md-12">
           <div class="carousel carousel-showmanymoveone slide" id="recentItemsCarousel">
             <div class="carousel-inner">
@@ -68,11 +63,11 @@
                   echo "<div class='item'>";
                 }
               ?>
-              <div class="col-xs-12 col-sm-6 col-md-3 carouselItemPadding">
+              <div class="col-xs-12 col-sm-6 col-md-3">
                 <?php
                 echo "<a href=". metadata($item, 'permalink') .">";
                 ?>
-                  <?php echo item_image($imageType='thumbnail'); ?>
+                  <?php echo item_image($imageType='fullsize', array('class' => "img-responsive")); ?>
                 </a>
               </div>
             </div>
@@ -85,7 +80,6 @@
     </div>
 
     <div class="row">
-      <!--<div style="background: #D6DBDF">-->
       <h1>Project Highlights</h1>
       <div class="container fluid">
 
@@ -127,7 +121,6 @@
           </div>
         </div>
       </div>
-    <!--</div>-->
     </div>
 
 
