@@ -1,11 +1,11 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 <style>
-/*Carousel buttons should be transparent. */
+/*Carousel buttons should be transparent. 
 .carousel-control.left,.carousel-control.right {
   background-image:none;
   width:50px;
   margin-left:-50px;
-}
+}*/
 
 /*css for connect with us*/
 .thumbnail1 {
@@ -46,44 +46,40 @@
   <div class="row">
     <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
 
-    <!-- New carousel has minor issues:
-        left and right move a bunch over but are only supposed to move one at a time.
-        Based this carousel off of: http://codepen.io/rtpHarry/pen/ogVord-->
-    <div class="container fluid" style="padding-top:50px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="carousel carousel-showmanymoveone slide" id="recentItemsCarousel">
-              <div class="carousel-inner">
+    <!--Based this carousel off of: http://codepen.io/rtpHarry/pen/ogVord-->
+    <div class="container" style="padding-top:50px;">
+      <div class="row">
+        <h1>Recent Digitized Items</h1>
+        <div class="col-md-12">
+          <div class="carousel carousel-showmanymoveone slide" id="recentItemsCarousel">
+            <div class="carousel-inner">
+              <?php
+              $items = get_recent_items(8);
+              set_loop_records('items',$items);
+              foreach (loop('items') as $item):
+                if (array_search($item,$items) == 0){
+                  echo "<div class='item active'>";
+                }else {
+                  echo "<div class='item'>";
+                }
+              ?>
+              <div class="col-xs-12 col-sm-6 col-md-3">
                 <?php
-                $items = get_recent_items(8);
-                set_loop_records('items',$items);
-                foreach (loop('items') as $item):
-                  if (array_search($item,$items) == 0){
-                    echo "<div class='item active'>";
-                  }else {
-                    echo "<div class='item'>";
-                  }
+                echo "<a href=". metadata($item, 'permalink') .">";
                 ?>
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                  <?php
-                  echo "<a href=". metadata($item, 'permalink') .">";
-                  ?>
-                    <?php echo item_image($imageType='thumbnail'); ?>
-                  </a>
-                </div>
+                  <?php echo item_image($imageType='fullsize', array('class' => "img-responsive")); ?>
+                </a>
               </div>
-              <?php endforeach; ?>
             </div>
-            <a class="left carousel-control" href="#recentItemsCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            <a class="right carousel-control" href="#recentItemsCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            <?php endforeach; ?>
           </div>
+          <a class="left carousel-control" href="#recentItemsCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="right carousel-control" href="#recentItemsCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <!--<div style="background: #D6DBDF">-->
       <h1>Project Highlights</h1>
       <div class="container fluid">
 
@@ -125,7 +121,6 @@
           </div>
         </div>
       </div>
-    <!--</div>-->
     </div>
 
 
