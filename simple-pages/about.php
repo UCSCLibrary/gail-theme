@@ -15,10 +15,11 @@ figcaption{
 }
 .jumbotron {
   margin-bottom: 0px;
+  width:100%;
   height: 480px;
   color: white;
   text-shadow: black 0.3em 0.3em 0.3em;
-  background-size:cover;
+  background-size:header;
   background:url('/themes/Bootstrapv1/assets/img/about.jpg') no-repeat center center;
 }	
 
@@ -27,34 +28,41 @@ figcaption{
     margin-left: auto;
     margin-right: auto;
 }
-
 </style>
 <!-- why is this random closing div here? Idk but it breaks the page if its removed--> 
 </div>
 
 <!--Centered Gail Picture -->
-<div class="row">
+
    <section class="jumbotron text-center">
 	   <div class="container">
+	     <div class="row">
 		   <h1 class="jumbotron-heading">Get To Know Us</h1>
 		   <p class="lead text-muted">A team of faculty, staff, and students at the University of California: Santa Cruz</p>
+	     </div>
 	   </div>
    </section>
-</div>
+<!--
+   <div class="container-fluid">
+   <div class="row-responsive">
+   <div class="col-lg-12 col-md-8 col-md-3">
+   <div class="widewrapper main">
+      <img src="/themes/Bootstrapv1/assets/img/about.jpg" class="img-responsive">
+   </div>
+   </div>
+   </div>
+</div-->
 
 <div style="padding-bottom: 20px"><h3><center><strong> Welcome to the Gail Project! </strong></center></h3></div>
 
 <!-- Description -->	
-<div class="container fluid">
-	<div class=“col-lg-6 col-md-6 col-sm-3”>
-	<div class=“row-responsive”>
-	  <!--div class=“ col-lg-6 col-md-6 col-sm-3”>
-			<!--<div class=“text-align">-->
+<div class="container">
+	<div class="row">
+	   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
 				<p class="text-justify"><font size="3"> The Gail Project is a collaborative, international public history project that explores the founding years of the American military occupation of Okinawa.  The project is inspired by a collection of photos taken in Okinawa in 1952 by an American Army Captain: Charles Eugene Gail.  The photos were generously donated to Special Collections at McHenry Library by Charles' daughter, Geri Gail, and have since been made available for student research. </font></p>
 				<p class="text-justify"><font size="3"> Our team of faculty, artists and undergraduate students at the University of California, Santa Cruz, are developing a traveling exhibition of Gail's photographs with an accompanying digital archive that is comprised of the photos, key texts and documents, oral histories from both American and Okinawan voices, as well as undergraduate student research and writing.  We believe that using the photographs as a lens through which to view this crucial time is relevant to populations throughout Okinawa, Japan, the United States and the entire Pacific region, and we aim to establish a dialogue by shedding light on both historical and contemporary issues. </font></p>
 				<p class="text-justify"><font size="3"> The project emphasizes hands-on research and creation of content by undergraduate students and serves as an innovative platform for new educational methods that encourage the use of multimedia, social media, archival research and travel. </font></p>
 				<p class="text-justify"><font size="3"> The Gail Project is directed by Professor Alan Christy of UC Santa Cruz, and  Shelby Graham of the Sesnon Gallery.</font></p></B>
-			<!--/div-->
 		</div>
 	</div>
 </div>
