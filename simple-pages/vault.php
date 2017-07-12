@@ -17,6 +17,57 @@
 </style>
 </div>
 
+<div class="row">
+      <div class="container fluid">
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	      <div class="row">
+		    <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		    </div>
+			   <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		  </div>
+	    </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+		     </div>
+	      </div>
+		 
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		      </div >
+			  <div style="padding-top: 10px">
+			  <figcaption><strong>Name<strong> <br> job </figcaption>
+		      </div>
+			 </div>
+	      </div>
+		
+		<div class="col-xs-6 col-sm-6 col-md-3">
+	        <div class="row">
+		      <div class="figure text-center" style="padding-top: 20px">
+		       <a href="http://placehold.it"><img src="http://placehold.it/200x200"></a>
+		      </div>
+			  <div style="padding-top: 10px">
+			      <figcaption><strong>Name<strong><br> job </figcaption>
+		      </div>
+			 </div>
+	    </div>
+		<!-- end of container -->
+		</div>
+	  <!-- end of big row div-->
+	  </div>
+
+<!--
 <div class="container-fluid main-area" style="padding-bottom:50px;">
 	<div class="row">
 	    <section class="jumbotron text-center">
@@ -44,4 +95,4 @@
 			</p>
 		</div>
 	</div>
-</div>
+</div-->
