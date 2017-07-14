@@ -15,12 +15,13 @@ figcaption{
 }
 .jumbotron {
   margin-bottom: 0px;
-  width:100%;
   height: 480px;
   color: white;
   text-shadow: black 0.3em 0.3em 0.3em;
-  background-size:header;
   background:url('/themes/Bootstrapv1/assets/img/about.jpg') no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }	
 
 .center {
@@ -42,7 +43,8 @@ figcaption{
 	     </div>
 	   </div>
    </section>
-<!--
+
+<!-- Testing a full width banner
    <div class="container-fluid">
    <div class="row-responsive">
    <div class="col-lg-12 col-md-8 col-md-3">
@@ -58,7 +60,7 @@ figcaption{
 <!-- Description -->	
 <div class="container">
 	<div class="row">
-	   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+	   <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12">
 				<p class="text-justify"><font size="3"> The Gail Project is a collaborative, international public history project that explores the founding years of the American military occupation of Okinawa.  The project is inspired by a collection of photos taken in Okinawa in 1952 by an American Army Captain: Charles Eugene Gail.  The photos were generously donated to Special Collections at McHenry Library by Charles' daughter, Geri Gail, and have since been made available for student research. </font></p>
 				<p class="text-justify"><font size="3"> Our team of faculty, artists and undergraduate students at the University of California, Santa Cruz, are developing a traveling exhibition of Gail's photographs with an accompanying digital archive that is comprised of the photos, key texts and documents, oral histories from both American and Okinawan voices, as well as undergraduate student research and writing.  We believe that using the photographs as a lens through which to view this crucial time is relevant to populations throughout Okinawa, Japan, the United States and the entire Pacific region, and we aim to establish a dialogue by shedding light on both historical and contemporary issues. </font></p>
 				<p class="text-justify"><font size="3"> The project emphasizes hands-on research and creation of content by undergraduate students and serves as an innovative platform for new educational methods that encourage the use of multimedia, social media, archival research and travel. </font></p>
@@ -187,13 +189,13 @@ figcaption{
 		<div class="col-xs-6 col-sm-6 col-md-3">
 	        <div class="row">
 		      <div class="figure text-center" style="padding-top: 20px">
-		       <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
+		        <a href="http://placehold.it"><img src="http://placehold.it/175x175"></a>
 		      </div>
 			  <div style="padding-top: 10px">
-			  <figcaption><strong>Name<strong> <br> job </figcaption>
+			    <figcaption><strong>Name<strong> <br> job </figcaption>
 		      </div>
-		     </div>
-	      </div>
+		    </div>
+	    </div>
 		 
 		<div class="col-xs-6 col-sm-6 col-md-3">
 	        <div class="row">
@@ -204,7 +206,7 @@ figcaption{
 			  <figcaption><strong>Name<strong> <br> job </figcaption>
 		      </div>
 			 </div>
-	      </div>
+	    </div>
 		
 		<div class="col-xs-6 col-sm-6 col-md-3">
 	        <div class="row">
@@ -275,8 +277,6 @@ figcaption{
 		</div>
 	  <!-- end of big row div-->
 	  </div>
-	  
-	  </div>
 <!-- Translated Description
 <B><p>プロジェクトについて</p>
 
@@ -293,7 +293,7 @@ figcaption{
 
 
 
-<p>ゲイル•プロジェクトはカリフォルニア大学サンタクルーズ校準教授、アラン•クリスティー、および、セズノン•ギャラリー長のシェルビー•グラムによって管理されています。</p></B>
+<p>ゲイル•プロジェクトはカリフォルニア大学サンタクルーズ校準教授、アラン•クリスティー、および、セズノン•ギャラリー長のシェルビー•グラムによって管理されています。</p></B-->
 
 
 </div>
