@@ -2,42 +2,12 @@ if (!Omeka) {
     var Omeka = {};
 }
 
-(function($,sr){
- 
-  // debouncing function from John Hann
-  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-  var debounce = function (func, threshold, execAsap) {
-      var timeout;
- 
-      return function debounced () {
-          var obj = this, args = arguments;
-          function delayed () {
-              if (!execAsap)
-                  func.apply(obj, args);
-              timeout = null; 
-          };
- 
-          if (timeout)
-              clearTimeout(timeout);
-          else if (execAsap)
-              func.apply(obj, args);
- 
-          timeout = setTimeout(delayed, threshold || 100); 
-      };
-  }
-	// smartresize 
-	jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
- 
-})(jQuery,'smartresize');
-
 (function ($) {
-
     Omeka.showAdvancedForm = function () {
         var advancedForm = $('#advanced-form');
         var searchTextbox = $('#search-form input[type=text]');
         var searchSubmit = $('#search-form input[type=submit]');
         if (advancedForm) {
-            searchTextbox.css("width", "60%");
             advancedForm.css("display", "none");
             searchSubmit.addClass("with-advanced").after('<a href="#" id="advanced-search" class="button">Advanced Search</a>');
             advancedForm.click(function (event) {
@@ -58,39 +28,27 @@ if (!Omeka) {
         } else {
             $('#search-form input[type=submit]').addClass("blue button");
         }
+        
+        
     };
     
-    Omeka.moveNavOnResize = function() {
-        var primaryNavUl;
-        var moveNav = function () {
-            if ($(window).width() < 768) {
-                primaryNavUl = $('#primary-nav ul.navigation').first().detach();
-                $(primaryNavUl).insertBefore('#wrap');
-                $(primaryNavUl).addClass('mobile');
+    Omeka.dropDown = function(){
+        var dropdownMenu = $('#mobile-nav');
+        dropdownMenu.prepend('<a class="menu">Menu</a>');
+        //Hide the rest of the menu
+        $('#mobile-nav .navigation').hide();
+
+        //function the will toggle the menu
+        $('.menu').click(function() {
+            var x = $(this).attr('id');
+
+            if (x==1) {
+                $("#mobile-nav .navigation").slideUp();
+                $(this).attr('id', '0');
             } else {
-                primaryNavUl = $('.menu-button + ul.navigation').detach();
-                $(primaryNavUl).prependTo('#primary-nav');
-                $(primaryNavUl).removeClass('mobile');
-            }
-        }
-        moveNav();
-        
-        $(window).smartresize(function() {
-            moveNav();
-        });
-    };
-    
-    Omeka.mobileMenu = function() {
-        $('.navigation li a').each( function() {
-            if ($(this).next().length > 0) {
-                $(this).parent().addClass('parent');
+                $("#mobile-nav .navigation").slideDown();
+                $(this).attr('id','1');
             }
         });
-        
-        $('.menu-button').click( function(e) {
-            e.preventDefault();
-            $('.mobile').toggle();
-        });
     };
-    
 })(jQuery);
