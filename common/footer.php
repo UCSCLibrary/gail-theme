@@ -1,100 +1,47 @@
-<footer class="footer" style="padding:0px;margin-top:0px;border-top:0px;">
-  <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation" style="position:relative;">
-    <div "container-fluid">
-      <!-- Branding -->
-      <div class="container-fluid">
-        <div class="row" style="margin-bottom:20px;margin-top:20px;">
-          <div class="col-md-3">
-            <p>
-              <a class="navbar-brand" href="/">
-                <img src="<?php echo img('logoalpha.png', 'assets/img');?>" class="img-responsive" style="height:130%;width:auto;background-color:transparent;">
-              </a>
-              <a class="navbar-brand" href="/">
-                the gail project
-              </a>
-            </p>
-            <br/><br/><br/>
-            <p style="color:white;">
-              An Okinawan-American Dialogue
-            </p>
-          </div>
-          <div class="col-md-3">
-            <p>
-              <a href="#">About</a>
-            </p>
-            <p>
-              <a href="#">Collections</a>
-            </p>
-            <p>
-              <a href="#">Studio</a>
-            </p>
-            <p>
-              <a href="#">Contribute</a>
-            </p>
-          </div>
-          <div class="col-md-3">
-            <p style="color:white;">
-              Connect With Us
-            </p>
-            <div class="row">
-              <div class="col-xs-3 col-sm-3 col-md-3">
-                <a href="https://twitter.com/thegailproject">
-                  <img src="<?php echo img('twitter.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
-                </a>    
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-3">
-                <a href="https://www.facebook.com/TheGailProject/">
-                  <img src="<?php echo img('facebook.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
-                </a>
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-3">
-                <a href="https://www.instagram.com/thegailproject/">
-                  <img src="<?php echo img('insta.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
-                </a>
-              </div>
-              <div class="col-xs-3 col-sm-3 col-md-3">
-                <a href="https://medium.com/@TheGailProject">
-                  <img src="<?php echo img('medium.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
-                </a>
-              </div>
-            </div>
-          </div>
-          <!--<div class="col-md-3">
-            <p>
-              Subscribe for Updates
-            </p>
-            <form>
-              <div class="input-group">
-                <input type="email" class="form-control" id="email" placeholder="email" disabled="true">
-                <!--<i class="glyphicon glyphicon glyphicon-menu-right" style="background-color:transparent;"></i>
-              </div>
-            </form>
-          </div>-->
-        </div>
-      </div>
-    </div>
-  </div>
-</footer><!-- end footer -->
+        </div><!-- end content -->
+
+    </div><!-- end wrap -->
+    
+
+    <footer>
+
+<div align="right">
+
+<!--        <email>
+
+<a href="mailto:thegailproject@gmail.com"><img src="/themes/gailtheme/images/mediabuttons/Email-plain.png" onmouseover="this.src='/themes/gailtheme/images/mediabuttons/Email-hover2.png'" onmouseout="this.src='/themes/gailtheme/images/mediabuttons/Email-plain.png'" /></a> -->
 
 
+<facebook>
+<a href="https://www.facebook.com/TheGailProject" target="_blank" class="social-icons"><img src="/themes/gailtheme/images/mediabuttons/Facebook-Plain.png" onmouseover="this.src='/themes/gailtheme/images/mediabuttons/Facebook-Hover.png'" onmouseout="this.src='/themes/gailtheme/images/mediabuttons/Facebook-Plain.png'" /></a>
 
-<!-- JavaScripts -->
-<!-- Placed at the end of the document so the pages load faster -->
-<!--removed the CDN version of the BS JS, because it was conflicting and running things twice.-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+<Instagram>
 
-<?php queue_js_file(array(
-  'bootstrap.min',
-  'showmanymoveonecarousel')); ?>
+<a href="http://instagram.com/thegailproject" target="_blank" class="social-icons"><img src="/themes/gailtheme/images/mediabuttons/Instagram-Plain.png" onmouseover="this.src='/themes/gailtheme/images/mediabuttons/Instagram-Hover.png'" onmouseout="this.src='/themes/gailtheme/images/mediabuttons/Instagram-Plain.png'" / ></a>
 
-<script type="text/javascript">
-  jQuery(document).ready(function(){
-    Omeka.showAdvancedForm();
-    Omeka.dropDown();
-  });
-</script>
+<Medium>
 
-<?php echo head_js(); ?>
+<a href="https://medium.com/the-gail-project" target="_blank" class="social-icons"><img src="/themes/gailtheme/images/mediabuttons/Medium-Plain.png" onmouseover="this.src='/themes/gailtheme/images/mediabuttons/Medium-Hover.png'" onmouseout="this.src='/themes/gailtheme/images/mediabuttons/Medium-Plain.png'" /></a>
 
+<tumblr>
+
+<a href="http://thegailproject.tumblr.com/" target="_blank" class="social-icons"><img src="/themes/gailtheme/images/mediabuttons/Tumblr-Plain.png" onmouseover="this.src='/themes/gailtheme/images/mediabuttons/Tumblr-Hover.png'" onmouseout="this.src='/themes/gailtheme/images/mediabuttons/Tumblr-Plain.png'" /></a>
+
+<twitter>
+
+<a href="https://twitter.com/TheGailProject" target="_blank" class="social-icons"><img src="/themes/gailtheme/images/mediabuttons/Twitter-Plain.png" onmouseover="this.src='/themes/gailtheme/images/mediabuttons/Twitter-Hover.png'" onmouseout="this.src='/themes/gailtheme/images/mediabuttons/Twitter-Plain.png'" /></a>
+
+</div>
+        
+    </footer><!-- end footer -->
+
+    <script type="text/javascript">
+    jQuery(document).ready(function () {
+        Omeka.showAdvancedForm();        
+        Omeka.moveNavOnResize();        
+        Omeka.mobileMenu();        
+    });
+    </script>
+	</div>
 </body>
 </html>
