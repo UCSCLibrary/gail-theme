@@ -37,24 +37,29 @@
               Connect With Us
             </p>
             <div class="row">
-              <div class="col-xs-3 col-sm-3 col-md-3">
+              <div class="col-xs-2 col-sm-2 col-md-2">
                 <a href="https://twitter.com/thegailproject">
                   <img src="<?php echo img('twitter.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
                 </a>    
               </div>
-              <div class="col-xs-3 col-sm-3 col-md-3">
+              <div class="col-xs-2 col-sm-2 col-md-2">
                 <a href="https://www.facebook.com/TheGailProject/">
                   <img src="<?php echo img('facebook.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
                 </a>
               </div>
-              <div class="col-xs-3 col-sm-3 col-md-3">
+              <div class="col-xs-2 col-sm-2 col-md-2">
                 <a href="https://www.instagram.com/thegailproject/">
                   <img src="<?php echo img('insta.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
                 </a>
               </div>
-              <div class="col-xs-3 col-sm-3 col-md-3">
+              <div class="col-xs-2 col-sm-2 col-md-2">
                 <a href="https://medium.com/@TheGailProject">
                   <img src="<?php echo img('medium.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
+                </a>
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2">
+                <a href="http://thegailproject.tumblr.com/">
+                  <img src="<?php echo img('tumblr.png', 'assets/img');?>" class="img-responsive" style="max-height:150px;max-width:150px;height:70%;width:70%;background-color:transparent;">
                 </a>
               </div>
             </div>
