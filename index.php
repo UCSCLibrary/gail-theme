@@ -153,7 +153,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="card" style="background-color: #939bc1;">
                 <a href="http://thegailproject.tumblr.com/">
-                  <img src="<?php echo img('insta.png', 'assets/img');?>" class="img-responsive" style="opacity:0.5"/>
+                  <img src="<?php echo img('tumblr.png', 'assets/img');?>" class="img-responsive" style="opacity:0.5"/>
                   <div class="boxCaption">
                     <font color="white" style="text-shadow: 2px 2px #939bc1;">
                       <p style="font-weight: bold;">
