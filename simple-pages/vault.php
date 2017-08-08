@@ -120,11 +120,11 @@ a:hover {
 		<!--Top 3 Rows-->
 		  <div class="col-xs-9 col-xs-offset-2 col-md-4  col-md-offset-0 col-sm-6 col-sm-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
-              <a href="/items/browse?tags=Daily+Life+%26+Work&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/simple_page_resize/813c4524d89e4de7f66941106bc961d5.JPG">
+              <a href="/items/browse?tags=Directive&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/simple_page_resize/813c4524d89e4de7f66941106bc961d5.JPG">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    Government Documents
+                    Directives
                   </h3>
                 </div>
               </div></a>
@@ -133,7 +133,7 @@ a:hover {
 
           <div class="col-xs-9 col-xs-offset-2 col-md-4  col-md-offset-0 col-sm-6 col-sm-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
-              <a href="/items/browse?tags=Heritage&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/simple_page_resize/632ea8dd86e94be922cfb887d1b04c15.JPG">
+              <a href="/items/browse?tags=Maps&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/simple_page_resize/632ea8dd86e94be922cfb887d1b04c15.JPG">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
@@ -146,11 +146,11 @@ a:hover {
 
           <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
-              <a href="/items/browse?tags=Ocean+Life&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/original/9466000816edd323670878fbefc609d1.png">
+              <a href="/items/browse?tags=Documents&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/original/9466000816edd323670878fbefc609d1.png">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    Journal Entries
+                    All Documents
                   </h3>
                 </div>
               </div></a>
