@@ -60,6 +60,7 @@ figcaption{
 </div>
 
 <!-- About US Photots-->
+<!--
 <h3><center><strong> About Us </strong></center></h3>
 <div class="row">
       <div class="container fluid">
@@ -106,9 +107,9 @@ figcaption{
 		      </div>
 			 </div>
 	    </div>
-		<!-- end of container -->
+		<!-- end of container 
 		</div>
-	  <!-- end of big row div-->
+	  <!-- end of big row div
 	  </div>
 	  
 	 <div class="row">
@@ -156,9 +157,9 @@ figcaption{
 		      </div>
 			 </div>
 	    </div>
-		<!-- end of container -->
+		<!-- end of container 
 		</div>
-	  <!-- end of big row div-->
+	  <!-- end of big row div
 	  </div>
 	  
 	  </div>
@@ -208,9 +209,9 @@ figcaption{
 		      </div>
 			 </div>
 	    </div>
-		<!-- end of container -->
+		<!-- end of container 
 		</div>
-	  <!-- end of big row div-->
+	  <!-- end of big row div
 	  </div>
 	  
 	  </div>
@@ -263,12 +264,15 @@ figcaption{
 		      </div>
 			 </div>
 	    </div>
-		<!-- end of container -->
+		<!-- end of container 
 		</div>
 	  <!-- end of big row div-->
 	  </div>
 	  
 	  </div>
+
+
+
 <!-- Translated Description
 <B><p>プロジェクトについて</p>
 
@@ -285,7 +289,7 @@ figcaption{
 
 
 
-<p>ゲイル•プロジェクトはカリフォルニア大学サンタクルーズ校準教授、アラン•クリスティー、および、セズノン•ギャラリー長のシェルビー•グラムによって管理されています。</p></B>
+<p>ゲイル•プロジェクトはカリフォルニア大学サンタクルーズ校準教授、アラン•クリスティー、および、セズノン•ギャラリー長のシェルビー•グラムによって管理されています。</p></B>-->
 
 
 </div>
