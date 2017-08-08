@@ -1,37 +1,15 @@
-
 <style>
-.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-}
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-  bottom-padding: 0;
-}
-
-.col-max{
-	max-height: 280px;
-}
-
-
 .jumbotron{
-    background:url("/files/simple_page_resize/64b4c37446a5814640aa67fc30efab9e.png") no-repeat center center;
-	height:500px;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-color: rgb(201,201,201);
+	background-color: rgba(210,73,74, 0.9);
+	bottom-padding: 0px;
+	min-height: 100px;
 }
-h1{
+
+.jumbotron-heading{
 	font-weight: 700;
-	color: rgb(255,255,255);
+	color: white;
 }
-.text-left {
-    position: absolute;
-	left:115px;
-	top:230px;
-	font-size: 72px;
-}
+
 /* ==================================================
   Elements
   ================================================== */
@@ -52,12 +30,12 @@ a:hover {
   Portfolio Styling
   ================================================== */
 .portfolio {
-  background-color: rgb(34,34,34); 
-  padding-bottom: 0;
+  background-color: rgba(255,255,255,0.8); 
+   padding-bottom: 10px;
 }
 
 .portfolio h2 {
-  color: #199EB8;
+  color: rgb(27,94,174);
   margin-bottom: 25px;
 }
 
@@ -70,8 +48,9 @@ a:hover {
 }
 
 .portfolio-grid .row > div {
-  padding: 0;
+  padding: 25px;
 }
+
 
 .portfolio-grid .row > div .card img {
   width: 100%;
@@ -79,11 +58,12 @@ a:hover {
 
 .portfolio-grid .row > div .card .portfolio-over {
   position: absolute;
+  border-radius:100%;
   display: table-cell;
   vertical-align: middle;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(210, 73, 74, 0.8);
   top: 0;
   left: 0;
   text-align: center;
@@ -121,126 +101,78 @@ a:hover {
 </style>
 </div>
 
-<!--
-<div class="container-fluid main-area">
+<div class="container-fluid main-area" style="padding-bottom:25px;">
   <div class="row">
-    <section class="jumbotron text-center">
+    <div class="jumbotron text-center" style ="height: 300px">
       <div class="container">
-        <h1 class="jumbotron-heading">The Gail Photos</h1>
-        <p class="lead text-muted">Blah blah blah Mr. Gail Blah blah copy</p>
+        <h1 class="jumbotron-heading" style="color: white;">The Gail Documents</h1>
+        <p style="color: white;">Opening the Vault of Okinawa for your perusal</p>
       </div>
-    </section>
-   <div class="jumbotron">
-     <div class="container">
-	   <div class="row">
-	   </div> 
-	 </div>
-   </div>
-   
-   <div class="row">
-    <section class="no-padding">
-        <div class="container-fluid">
-            <div class="row no-gutter"> 
-				<div class="col-lg-4 col-md-6"> 
-					<a href="/items/browse?tags=Daily+Life+%26+Work&view=grid">
-                        <img src="https://bootstrapmade.com/demo/themes/Bell/img/porf-2.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-            <div class="col-lg-4 col-md-6">
-                    <a href="/items/browse?tags=Heritage&view=grid">
-                        <img src="/files/simple_page_resize/8837003f366b6559a16e68efe05d274a.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-		<div class="col-lg-4 col-md-6">
-                    <a href="/items/browse?tags=Ocean+Life&view=grid">
-                        <img src="/files/simple_page_resize/6a3dc4bd056a2c066b38fb13fb45478c.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-		<div class="col-lg-6 col-md-6">
-                    <a href="/items/browse?tags=People&view=grid">
-                        <img src="/files/simple_page_resize/9c5cec1875e514150223e97f9af51a95.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-		<div class="col-lg-6 col-md-12">
-                    <a href="/items/browse?tags=Landscapes&view=grid">
-                        <img src="/files/simple_page_resize/65a6d73fcbdb0d5122e2b27581c2c888.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!--###########################################################-->
-
-    <div class="jumbotron">
-	  <div class="container">
-	    <div class="row">
-		  <div class="text-left">
-	        <!--div class="text-vertical-center"-->
-	          <h1>DOCUMENTS</h1>
-	        <!--/div-->
-	      </div>
-		</div>
-	  </div>
     </div>
-	 <div class="portfolio" id="portfolio">
+  </div>
+</div>
+
+
+    <div class="portfolio" id="portfolio">
       <div class="portfolio-grid">
-		<div class="row no-gutter row-centered">
-		  <div class="col-lg-4 col-md-4 col-sm-6">
+	   <div class="container">
+		<div class="row row-centered">
+		<!--Top 3 Rows-->
+		  <div class="col-xs-9 col-xs-offset-2 col-md-4  col-md-offset-0 col-sm-6 col-sm-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
-              <a href="/items/browse?tags=Daily+Life+%26+Work&view=grid"><img alt="" src="/files/simple_page_resize/category1.png">
+              <a href="/items/browse?tags=Daily+Life+%26+Work&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/simple_page_resize/813c4524d89e4de7f66941106bc961d5.JPG">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    Daily Life and Work
+                    Government Documents
                   </h3>
                 </div>
               </div></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-xs-9 col-xs-offset-2 col-md-4  col-md-offset-0 col-sm-6 col-sm-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
-              <a href="/items/browse?tags=Heritage&view=grid"><img alt="" src="/files/simple_page_resize/category2.png">
+              <a href="/items/browse?tags=Heritage&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/simple_page_resize/632ea8dd86e94be922cfb887d1b04c15.JPG">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    Heritage
+                    Maps
                   </h3>
                 </div>
               </div></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
-              <a href="/items/browse?tags=Ocean+Life&view=grid"><img alt="" src="/files/simple_page_resize/category3.png">
+              <a href="/items/browse?tags=Ocean+Life&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/original/9466000816edd323670878fbefc609d1.png">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    Maritime Life
+                    Journal Entries
                   </h3>
                 </div>
               </div></a>
             </div>
           </div>
-
-          <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-max">
+        <!--Bottom 2 rows>
+          <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
             <div class="card card-block">
-              <a href="/items/browse?tags=People&view=grid"><img alt="" src="/files/simple_page_resize/category4.png">
+              <a href="/items/browse?tags=People&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/original/9c5cec1875e514150223e97f9af51a95.png">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    People
+                    
                   </h3>
                 </div>
               </div></a>
             </div>
           </div>
 		  
-		  <div class="col-lg-5 col-md-6 col-sm-10 col-max">
+		  <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
-              <a href="/items/browse?tags=Landscapes&view=grid"><img alt="" src="/files/simple_page_resize/category5.png">
+              <a href="/items/browse?tags=Landscapes&view=grid"><img class="img-circle img-responsive img-center" alt="" src="/files/original/65a6d73fcbdb0d5122e2b27581c2c888.png">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
@@ -249,7 +181,13 @@ a:hover {
                 </div>
               </div></a>
             </div>
-          </div>        
+          </div-->        
 		</div>
-       </div>
-	 </div>
+      </div>
+	</div>
+   </div>
+ </div> 
+ <div class="row">
+   <section class="jumbotron text-center"></section>
+ </div>
+	
