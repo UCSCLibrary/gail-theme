@@ -24,6 +24,9 @@
     <?php queue_css_file('manymoveonecarousel'); ?>
     <?php queue_css_file('boxes'); ?>
     <?php queue_css_file('simplejumbo'); ?>
+    <?php queue_css_file('jquery-ui.min'); ?>
+    <?php queue_css_file('jquery-ui.theme.min'); ?>
+    <?php queue_css_file('jquery-ui.structure.min'); ?>
     <!-- load in bootstrap via CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -51,6 +54,7 @@
     <?php queue_js_file('vendor/respond'); ?>
     <?php queue_js_file('globals'); ?>
     <?php queue_js_file('jquery.min'); ?>
+    <?php queue_js_file('jquery-ui.min');?>
     <?php echo head_js(); ?>
 
 </head>
