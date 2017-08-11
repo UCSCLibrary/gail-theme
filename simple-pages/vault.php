@@ -106,7 +106,7 @@ a:hover {
     <div class="jumbotron text-center" style ="height: 300px">
       <div class="container">
         <h1 class="jumbotron-heading" style="color: white;">The Gail Documents</h1>
-        <p style="color: white;">Opening the Vault of Okinawa for your perusal</p>
+        <p style="color: white;">Opening the Vault of modern Okinawan history</p>
       </div>
     </div>
   </div>

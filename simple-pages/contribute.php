@@ -5,7 +5,7 @@
             <div class="jumbotron text-center">
               <div class="container">
                 <h1 class="jumbotron-heading">Contribute to the Gail Project</h1>
-                <p>The Gail Project is a not-for-profit, student-managed project, your contributions will not go amiss!</p>
+                <p>The Gail Project is a not-for-profit, student-managed project, your contributions support transformative student learning!</p>
                 <p><a class="btn btn-primary btn-lg" href="https://securelb.imodules.com/s/1069/index.aspx?sid=1069&gid=1&pgid=780&dids=644&" role="button">Contribute »</a></p>
               </div>
             </div>
