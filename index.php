@@ -44,12 +44,12 @@
     <!--Based this carousel off of: http://codepen.io/rtpHarry/pen/ogVord-->
     <div class="container" style="padding-top:50px;">
       <div class="row">
-        <h1>Recently Digitized Items</h1>
+        <h1>Featured Items</h1>
         <div class="col-md-12">
           <div class="carousel carousel-showmanymoveone slide" id="recentItemsCarousel">
             <div class="carousel-inner">
               <?php
-              $items = get_recent_items(8);
+              $items = get_random_featured_items($num = 8, $hasImage = true);
               set_loop_records('items',$items);
               foreach (loop('items') as $item):
                 if (array_search($item,$items) == 0){
