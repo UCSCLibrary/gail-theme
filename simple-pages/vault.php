@@ -129,7 +129,9 @@ a:hover {
                 </div>
               </div></a>
             </div>
+			<h3 class="text-center" style="color: rgb(210, 73, 74)"><b> Directives </b></h3>
           </div>
+
 
           <div class="col-xs-9 col-xs-offset-2 col-md-4  col-md-offset-0 col-sm-6 col-sm-offset-0 col-lg-4 col-lg-offset-0">
             <div class="card card-block">
@@ -142,6 +144,7 @@ a:hover {
                 </div>
               </div></a>
             </div>
+			<h3 class="text-center" style="color: rgb(210, 73, 74); padding-top: 10px;"><b> Maps </b></h3>
           </div>
 
           <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
@@ -155,6 +158,7 @@ a:hover {
                 </div>
               </div></a>
             </div>
+			<h3 class="text-center" style="color: rgb(210, 73, 74)"><b> All Documents </b></h3>
           </div>
         <!--Bottom 2 rows>
           <div class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
