@@ -20,16 +20,16 @@
           </div>
           <div class="col-md-3">
             <p>
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </p>
             <p>
-              <a href="#">Collections</a>
+              <a href="/albums">Photos</a>
             </p>
             <p>
-              <a href="#">Studio</a>
+              <a href="/vault">Documents</a>
             </p>
             <p>
-              <a href="#">Contribute</a>
+              <a href="/contribute">Contribute</a>
             </p>
           </div>
           <div class="col-md-3">
